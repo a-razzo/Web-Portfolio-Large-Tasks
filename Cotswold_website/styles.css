@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  height: 10em;
+}
+
+/* CAROUSEL CONTAINER */
+.carousel-container{
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.carousel-col{
+  border: 1px black solid;
+}
