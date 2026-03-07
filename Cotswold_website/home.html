@@ -4,44 +4,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <header>
+  <header class="header">
     <nav>
+      <a href="home.html"><img class="logo" src="cotswold_logo.svg" alt="Home Page"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
       <ul>
-        <li><a href="#"><img class="logo" src="cotswold_logo.svg" alt="Cotswold Landscaping Logo"></a></li>
-        <li><a href="#">OUR PROJECTS</a></li>
-        <li><a href="#">OUR PROCESS</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">OUR SERVICES</a></li>
+        <li><a href="#">THE PROCESS</a></li>
+        <li><a href="#">PAST PROJECTS</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">FAQ</a></li>
         <li><a href="#">BOOK A CONSULTATION</a></li>
       </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
   </header>
   <main>
     <section class="carousel-container">
-      <div class="carousel-col">box 1</div>
-      <div class="carousel-col">box 2</div>
+      <article>
+        <h2>Aurum Landscapes</h2>
+        <p>The bestest coolest landscaping company ever</p>
+      </article>
+      <div class="container">
+      <div class="wrapper">
+      <img class="carousel-img" src="1.jpg" alt="#">
+      <img class="carousel-img" src="2.jpg" alt="#">
+      <img class="carousel-img" src="3.jpg" alt="#">
+      <img class="carousel-img" src="4.jpg" alt="#">
+      </div>
+      </div>
     </section>
     <section>
       <h2>Why choose Us?</h2>
       <div class="offer-container">
         <p>To us, it's not just about landscaping, it's about maintaining your heritage.</p>
         <article class="offer">
-          <figure>
-            <img src="#" alt="Article Img 1">
+          <figure class="offer-img">
+            <img src="5.JPG" alt="Article Img 1">
           </figure>
-          <p>Paragraph 1</p>
+          <figure class="offer-text">
+            <h2>Heading 1</h2>
+            <p>Paragraph 1</p>
+          </figure>
         </article>
-        <article class="offer">
-          <figure>
-            <img src="#" alt="Article Img 1">
+        <article class="offer offer-inverted">
+          <figure class="offer-img">
+            <img src="5.JPG" alt="Article Img 1">
           </figure>
-          <p>Paragraph 2</p>
-        </article>
-        <article class="offer">
-          <figure>
-            <img src="#" alt="Article Img 1">
+          <figure class="offer-text">
+            <h2>Heading 1</h2>
+            <p>Paragraph 1</p>
           </figure>
-          <p>Paragraph 3</p>
         </article>
       </div>
       <h3>Plus so much more:</h3>
@@ -82,5 +101,18 @@
     <a href="https://www.flaticon.com/free-icons/villa" title="villa icons">Villa icons created by 3ab2ou - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/trees" title="trees icons">Trees icons created by Freepik - Flaticon</a>
   </footer>
+  <!------JavaScript which toggles menu------>
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+        }
+
+      </script>
 </body>
 </html>
