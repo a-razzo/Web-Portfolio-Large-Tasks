@@ -2,10 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gilda Display", serif;
+}
+
+body{
+  background-color: rgb(38, 53, 39);
+  color: #ffbb00cc;
 }
 
 h2{
   text-align: center;
+  padding: 1em 0;
 }
 
 .logo{
@@ -18,7 +25,7 @@ h2{
 .header{
   height: 15vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7));
+  background-image: linear-gradient(rgba(39, 39, 39, 0.4));
   background-position: center;
   background-size: cover;
   position: relative;
@@ -33,6 +40,7 @@ nav{
 
 nav img{
   width: 100%;
+  filter: invert(100%);
 }
 
 .nav-links{
@@ -49,7 +57,7 @@ nav img{
 .nav-links ul li a{
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
 }
 .nav-links ul li::after{
   content: '';
@@ -72,16 +80,29 @@ nav .fa{
 .carousel-container{
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   gap: 1rem;
   margin: 0 auto;
-  background-color: rgb(99, 99, 99);
+  background-color: rgb(70, 70, 70);
+}
+
+.carousel-container p{
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  font-size: x-large;
+  padding: 0.7em 0;
+}
+
+.highlight{
+  color: #ff9900;
+  font-weight: 400;
 }
 
 .container{
   width: 100%;
   overflow: hidden;
-  opacity: 0.7;
+  opacity: 0.5;
   max-height: 60vh;
 }
 
@@ -102,6 +123,7 @@ nav .fa{
   width: 100%;
 }
 
+/* OFFER CONTAINER */
 .offer{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -134,16 +156,132 @@ nav .fa{
   grid-area: text;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
 }
 
-@media (max-width: 700px) {
-  .text-box h1{
-    font-size: 20px;
-  }
+/* EXTRAS CONTAINER */
 
+.extras-container ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-position: inside;
+}
+
+.extras-container ul li{
+  text-align: center;
+  padding: 1rem;
+}
+
+/* REVIEWS CONTAINER */
+
+.row{
+  display: flex;
+  gap: 1rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.testimonial-col{
+  background-color: rgb(255, 255, 255);
+  color: #363636;
+  padding: 2rem;
+  position: relative;
+}
+
+.testimonial-col h3{
+  padding-top: 2em;
+}
+
+.testimonial-col::before {
+  content: '\201C';
+  font-size: 2rem;
+  color: #555;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  line-height: 1;
+}
+
+.testimonial-col::after {
+  content: '\201D';
+  font-size: 2rem;
+  color: #555;
+  position: absolute;
+  bottom: 2em;
+  right: 1em;
+  line-height: 1;
+}
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text text"
+                       "form contact-info";
+  background-color: #696969;
+  width: 100%;
+  gap: 2em;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.contact-text{
+  grid-area: text;
+}
+
+.contact-container address{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  grid-area: contact-info;
+}
+
+.contact-container figure{
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-icon{
+  width: 3em;
+  height: 3em;
+}
+
+.consultation-form{
+  display: flex;
+  flex-direction: column;
+  grid-area: form;
+  width: 95%;
+  justify-self: center;
+  align-items: center;
+}
+
+#enquiry{
+  resize: none;
+  height: 150px;
+}
+
+.consultation-form label {
+  align-self: flex-start;
+  padding-left: 20%;
+}
+
+.consultation-form input, .consultation-form textarea{
+  width: 60%;
+  margin: 15px 0;
+}
+
+footer{
+  background-color: linear-gradient(rgba(0, 0, 0, 0.4));
+}
+
+@media (max-width: 1100px){
   .nav-links ul li{
     display: block;
+  }
+
+  .nav-links ul li a{
+    font-size: 18px;
   }
 
   .nav-links{
@@ -170,6 +308,15 @@ nav .fa{
     cursor: pointer;
   }
 
+  .carousel-container p{
+    font-size: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .text-box h1{
+    font-size: 20px;
+  }
+
   .row{
     flex-direction: column;
   }
@@ -185,5 +332,22 @@ nav .fa{
       "image"
       "text";
   }
+
+  .extras-container ul{
+  grid-template-columns: 1fr;
+}
+
+.contact-container{
+  grid-template-columns: 1fr;
+  grid-template-areas: "text"
+                       "form"
+                       "contact-info";
+}
+
+.contact-container address{
+  flex-direction: column;
+  align-items: center;
+}
+
 }
 

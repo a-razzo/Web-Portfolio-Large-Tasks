@@ -2,6 +2,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -15,7 +18,7 @@
       <ul>
         <li><a href="#">ABOUT US</a></li>
         <li><a href="#">OUR SERVICES</a></li>
-        <li><a href="#">THE PROCESS</a></li>
+        <li><a href="#">OUR PROCESS</a></li>
         <li><a href="#">PAST PROJECTS</a></li>
         <li><a href="#">BLOG</a></li>
         <li><a href="#">FAQ</a></li>
@@ -27,10 +30,7 @@
   </header>
   <main>
     <section class="carousel-container">
-      <article>
-        <h2>Aurum Landscapes</h2>
-        <p>The bestest coolest landscaping company ever</p>
-      </article>
+        <p>Welcome to <span class="highlight">Aurum Landscapes</span>, the premier luxury landscaping firm in the Cotswolds, specializing in bespoke garden design and estate transformations. We create breathtaking outdoor spaces that blend elegance, innovation, and craftsmanship to complement the finest country homes.</p>
       <div class="container">
       <div class="wrapper">
       <img class="carousel-img" src="1.jpg" alt="#">
@@ -41,16 +41,15 @@
       </div>
     </section>
     <section>
-      <h2>Why choose Us?</h2>
       <div class="offer-container">
-        <p>To us, it's not just about landscaping, it's about maintaining your heritage.</p>
+        <h2>To us, it's not just about landscaping, it's about <span style="font-style: italic;">maintaining your heritage.</span></h2>
         <article class="offer">
           <figure class="offer-img">
             <img src="5.JPG" alt="Article Img 1">
           </figure>
           <figure class="offer-text">
             <h2>Heading 1</h2>
-            <p>Paragraph 1</p>
+            <p>With a meticulous approach and a passion for perfection, our team of expert landscape designers, horticulturists, and artisans work exclusively on projects starting from £100,000. Our mission is to craft timeless landscapes that enhance the beauty of your home while reflecting your vision and lifestyle.</p>
           </figure>
         </article>
         <article class="offer offer-inverted">
@@ -59,47 +58,86 @@
           </figure>
           <figure class="offer-text">
             <h2>Heading 1</h2>
-            <p>Paragraph 1</p>
+            <p>From sweeping manicured gardens to architecturally inspired outdoor living spaces, we curate landscapes that stand as works of art. Whether restoring a historic garden or designing an entirely new outdoor sanctuary, we tailor every detail to suit your estate&#x2019;s character.</p>
           </figure>
         </article>
       </div>
-      <h3>Plus so much more:</h3>
+      <h2>Our most popular responsibilities:</h2>
       <div class="extras-container">
-        <p>Extra service 1</p>
-        <p>Extra service 2</p>
-        <p>Extra service 3</p>
-        <p>Extra service 4</p>
-        <p>Extra service 5</p>
-        <p>Extra service 6</p>
+        <ul>
+          <li>Full Estate & Gardening Maintenance</li>
+          <li>Fully Custom Hardscaping Projects</li>
+          <li>Extensive Terracing</li>
+          <li>Custom-designed water features</li>
+          <li>High-End Driveways & Entraceways</li>
+          <li>Mature Tree Importation, Planting & Care</li>
+        </ul>
       </div>
     </section>
-    <section>
+    <section class="reviews">
       <h2>Our recent reviews</h2>
-      <div class="carousel-container-2">
-        <div class="carousel-col">box 1</div>
-        <div class="carousel-col">box 2</div>
+      <div class="row">
+        <div class="testimonial-col">
+            <p>
+              Lorem Ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla, eleifend faucibus est
+              sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.
+              <h3>Client 1</h3>
+            </p>
+        </div>
+        <div class="testimonial-col">
+            <p>
+              Lorem Ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla, eleifend faucibus est
+              sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.
+              <h3>Client 2</h3>
+            </p>   
+        </div>
       </div>
     </section>
-    <section class="contact-container">
-      <article class="offer">
-        <figure>
-          <img src="#" alt="Contact Img 1">
-        </figure>
-        <p>PHONE NUMBER</p>
+    <section class="contact-container" aria-label="Contact information">
+      <article class="contact-text">
+        <p>At Aurum Landscapes, luxury means exclusivity, attention to detail, and an unwavering commitment to excellence. We take on a select number of projects each year to ensure every client receives our undivided attention.</p>
+        <p>Begin your journey to a truly remarkable garden. Contact us today to discuss your vision.</p>
       </article>
-      <article class="offer">
-        <figure>
-          <img src="#" alt="Contact Img 2">
-        </figure>
-        <p>EMAIL</p>
-      </article>
-    </section>
+  <address>
+    <figure class="figure1">
+      <img class="contact-icon" src="phone-icon.svg" alt="">
+      <figcaption><a href="tel:+441522123456">+44 1522 123456</a></figcaption>
+    </figure>
+    <figure class="figure2">
+      <img class="contact-icon" src="email-icon.svg" alt="">
+      <figcaption><a href="mailto:example@aurumlandscapes.com">example@aurumlandscapes.com</a></figcaption>
+    </figure>
+  </address>
+
+  <form class="consultation-form" action="(Database here)" method="POST">
+    
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="i.e. 'John Smith'" required>
+   
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="i.e. 'name@example.com'" required>
+    
+      <label for="tel">Contact Number:</label>
+      <input type="tel" id="tel" name="tel" placeholder="i.e. '01522123456'">
+
+      <label for="enquiry">Enquiry Message:</label>
+      <textarea id="enquiry" name="enquiry" placeholder="Enquiry Message here..." required></textarea>
+
+      <input type="reset">
+
+      <input type="submit">
+  </form>
+</section>
   </main>
   <footer>
     <p>&copy; 2026 Cotswold Landscaping. All rights reserved.</p>
     <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/villa" title="villa icons">Villa icons created by 3ab2ou - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/trees" title="trees icons">Trees icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Prosymbols - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
   </footer>
   <!------JavaScript which toggles menu------>
       <script>
