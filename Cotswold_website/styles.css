@@ -8,11 +8,13 @@
 body{
   background-color: rgb(38, 53, 39);
   color: #ffbb00cc;
+  overflow-x: hidden;
 }
 
-h2{
+h1, h2{
   text-align: center;
   padding: 1em 0;
+  color: #fff;
 }
 
 .logo{
@@ -219,7 +221,7 @@ nav .fa{
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "text text"
                        "form contact-info";
-  background-color: #696969;
+  background-color: #687463;
   width: 100%;
   gap: 2em;
   align-items: center;
@@ -235,6 +237,15 @@ nav .fa{
   flex-direction: column;
   gap: 3rem;
   grid-area: contact-info;
+  background-color: #fff;
+  border-radius: .5em;
+  align-items: center;
+  width: 90%;
+  padding: 5em 0;
+}
+
+.contact-container address figcaption a{
+  color: #ff9257;
 }
 
 .contact-container figure{
@@ -254,6 +265,23 @@ nav .fa{
   width: 95%;
   justify-self: center;
   align-items: center;
+  padding: 5em 0;
+}
+
+.consultation-form button{
+  background: #f44336;
+  padding: 1em 2em;
+  border-radius: 1000px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-left: 20%;
+}
+
+.consultation-form button:hover{
+  background: #fd786f;
 }
 
 #enquiry{
