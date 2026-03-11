@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="blogstyles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <a href="home.html"><img class="logo" src="cotswold_logo.svg" alt="Home Page"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">OUR SERVICES</a></li>
+        <li><a href="process.html">OUR PROCESS</a></li>
+        <li><a href="projects.html">PAST PROJECTS</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">BOOK A CONSULTATION</a></li>
+      </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </header>
+  <main>
+    <h1>Blogs</h1>
+    <p>Stay inspired with the latest trends, insights, and behind-the-scenes glimpses into the world of luxury landscaping.</p>
+    <h2>Recent Articles</h2>
+    <section class="article-container">
+      <article>
+        <figure>
+          <img src="1.jpg" alt="article">
+          <figcaption>The Art of Timeless Garden Design – Discover how to create a landscape that stands the test of time.</figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <img src="1.jpg" alt="article">
+          <figcaption>The Rise of Outdoor Living Spaces – Explore the luxury trend of fully integrated outdoor entertaining areas.</figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <img src="1.jpg" alt="article">
+          <figcaption>Seasonal Garden Guide – Expert advice on keeping your estate in perfect condition year-round.</figcaption>
+        </figure>
+      </article>
+    </section>
+    <p>From expert planting advice to exclusive project showcases, our journal is a must-read for those who appreciate the beauty of fine landscaping. Explore more.</p>
+  </main>
+  <footer>
+    <p>&copy; 2026 Cotswold Landscaping. All rights reserved.</p>
+    <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/villa" title="villa icons">Villa icons created by 3ab2ou - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/trees" title="trees icons">Trees icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Prosymbols - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+  </footer>
+  <!------JavaScript which toggles menu------>
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+        }
+
+      </script>
+</body>
+</html>
