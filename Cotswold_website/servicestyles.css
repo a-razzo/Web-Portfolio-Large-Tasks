@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: .5em 0;
+  margin: 1.5em 0;
   color: #fff;
   position: relative;
-  padding: 6em 0;
+  padding: 6em 2em;
 }
 
 .services-container h2,
@@ -15,17 +15,17 @@
   z-index: 1;
 }
 
-.services-img-1 { background-image: url('6.jpg'); }
-.services-img-2 { background-image: url('7.jpg'); }
-.services-img-3 { background-image: url('8.jpg'); }
-.services-img-4 { background-image: url('9.jpg'); }
-.services-img-5 { background-image: url('10.jpeg'); }
+.services-img-1 { background-image: url('images/6.jpg'); }
+.services-img-2 { background-image: url('images/7.jpg'); }
+.services-img-3 { background-image: url('images/8.jpg'); }
+.services-img-4 { background-image: url('images/9.jpg'); }
+.services-img-5 { background-image: url('images/10.jpeg'); }
 
 .services-container::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .project-title{

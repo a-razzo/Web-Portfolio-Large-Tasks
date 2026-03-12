@@ -7,14 +7,23 @@
 
 body{
   background-color: rgb(38, 53, 39);
-  color: #ffbb00cc;
+  color: #ffc831cc;
   overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 h1, h2{
   text-align: center;
   padding: 1em 0;
   color: #fff;
+}
+
+p{
+  font-size: 18px;
+}
+
+input{
+  padding: 1em 0;
 }
 
 .logo{
@@ -25,12 +34,15 @@ h1, h2{
 
 /* NAVIGATION */
 .header{
-  height: 15vh;
+  height: 13vh;
   width: 100%;
   background-image: linear-gradient(rgba(39, 39, 39, 0.4));
+  background-color: rgb(21, 39, 25);
   background-position: center;
   background-size: cover;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 nav{
@@ -78,11 +90,15 @@ nav .fa{
   display: none;
 }
 
+.page-intro{
+  padding: 1em 2em;
+}
+
 /* CAROUSEL CONTAINER */
 .carousel-container{
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
   gap: 1rem;
   margin: 0 auto;
   background-color: rgb(70, 70, 70);
@@ -92,7 +108,7 @@ nav .fa{
   align-self: center;
   justify-self: center;
   width: 80%;
-  font-size: x-large;
+  font-size: 27px;
   padding: 0.7em 0;
 }
 
@@ -223,9 +239,21 @@ nav .fa{
                        "form contact-info";
   background-color: #687463;
   width: 100%;
-  gap: 2em;
   align-items: center;
   margin-top: 5em;
+  padding-bottom: 2em;
+}
+
+.contact-container p{
+  font-size: 20px;
+  padding: 2em;
+}
+
+.contact-bg-img{
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('images/10.jpeg');
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .contact-text{
@@ -240,8 +268,9 @@ nav .fa{
   background-color: #fff;
   border-radius: .5em;
   align-items: center;
-  width: 90%;
-  padding: 5em 0;
+  padding: 5em 1em;
+  margin: 0 auto;
+  color: black;
 }
 
 .contact-container address figcaption a{
@@ -299,8 +328,20 @@ nav .fa{
   margin: 15px 0;
 }
 
+.faq-container{
+  padding: 0 1em;
+}
+
+.faq-container h2{
+  text-align: left;
+}
+
 footer{
   background-color: linear-gradient(rgba(0, 0, 0, 0.4));
+}
+
+footer a{
+  color: white;
 }
 
 @media (max-width: 1100px){
@@ -309,12 +350,12 @@ footer{
   }
 
   .nav-links ul li a{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .nav-links{
     position: absolute;
-    background: #f44336;
+    background: #385527;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -340,6 +381,8 @@ footer{
     font-size: 100%;
   }
 }
+
+
 @media (max-width: 700px) {
   .text-box h1{
     font-size: 20px;
@@ -359,6 +402,7 @@ footer{
     grid-template-areas:
       "image"
       "text";
+    padding-bottom: 4em;
   }
 
   .extras-container ul{
@@ -370,6 +414,7 @@ footer{
   grid-template-areas: "text"
                        "form"
                        "contact-info";
+  padding-bottom: 10em;
 }
 
 .contact-container address{

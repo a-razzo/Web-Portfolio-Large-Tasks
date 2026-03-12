@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <nav>
-      <a href="home.html"><img class="logo" src="cotswold_logo.svg" alt="Home Page"></a>
+      <a href="home.html"><img class="logo" src="images/cotswold_logo.svg" alt="Home Page"></a>
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
       <ul>
@@ -30,7 +30,7 @@
   </header>
   <main>
     <h1>Frequently Asked Questions</h1>
-    <section>
+    <section class="faq-container">
       <article>
         <h2>What type of projects do you take on?</h2>
         <p>We specialize in high-end, bespoke landscaping for country homes and estates, focusing on projects that require significant design expertise and craftsmanship.</p>
@@ -52,24 +52,28 @@
         <p>Absolutely. We specialize in restoring and preserving heritage landscapes with great care and expertise.</p>
       </article>
     </section>
-    <section class="contact-container" aria-label="Contact information">
+    <section class="contact-container contact-bg-img" aria-label="Contact information">
       <article class="contact-text">
-        <p>Still have questions? Get in touch with our team.</p>
+        <h2>Still have questions? Get in touch with our team.</h2>
       </article>
   <address>
     <h3>Contact Details:</h3>
     <figure class="figure1">
-      <img class="contact-icon" src="phone-icon.svg" alt="">
-      <figcaption><a href="tel:+441522123456">+44 1522 123456</a></figcaption>
+      <img class="contact-icon" src="images/phone-icon.svg" alt="">
+      <figcaption><a href="tel:+441522123456">01234 567 890</a></figcaption>
     </figure>
     <figure class="figure2">
-      <img class="contact-icon" src="email-icon.svg" alt="">
-      <figcaption><a href="mailto:example@aurumlandscapes.com">example@aurumlandscapes.com</a></figcaption>
+      <img class="contact-icon" src="images/email-icon.svg" alt="">
+      <figcaption><a href="mailto:example@aurumlandscapes.com">info@aurumlandscapes.co.uk</a></figcaption>
+    </figure>
+    <figure class="figure3">
+      <img class="contact-icon" src="images/location-icon.svg" alt="">
+      <figcaption>Cotswolds, UK (By appointment only)</figcaption>
     </figure>
   </address>
 
   <form class="consultation-form" action="(Database here)" method="POST">
-    <h3>Send us a Message:</h3>
+    <h3>Get in Touch:</h3>
     
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" placeholder="i.e. 'John Smith'" required>
