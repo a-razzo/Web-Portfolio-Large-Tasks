@@ -1,0 +1,30 @@
+.process-carousel {
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.process-carousel .container {
+  opacity: 1;
+  max-height: 70vh;
+  opacity: 0.4;
+}
+
+.carousel-container .process-carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  font-size: 80px;
+  pointer-events: none;
+}
+
+.process-offer{
+  background-color: rgb(214, 193, 166);
+  margin: 3em 0;
+}
+
+.process-offer h2, .process-offer p{
+  color: black;
+}

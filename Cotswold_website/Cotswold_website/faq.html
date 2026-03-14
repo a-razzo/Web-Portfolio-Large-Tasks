@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav aria-label="Main navigation">
+  <a href="home.html"><img class="logo" src="images/cotswold_logo.svg" alt="Home Page"></a>
+  <div class="nav-links" id="navLinks">
+    <button class="menu-btn fa fa-times" onclick="hideMenu()" aria-label="Close navigation menu"></button>
+    <ul>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="service.html">OUR SERVICES</a></li>
+      <li><a href="process.html">OUR PROCESS</a></li>
+      <li><a href="projects.html">PAST PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+  <button class="fa fa-bars menu-btn" onclick="showMenu()" aria-label="Open navigation menu" aria-expanded="false"></button>
+</nav>
+  </header>
+  <main>
+    <h1 tabindex="0">Frequently Asked Questions</h1>
+    <section class="faq-container">
+      <article>
+        <h2 tabindex="0">What type of projects do you take on?</h2>
+        <p tabindex="0">We specialize in high-end, bespoke landscaping for country homes and estates, focusing on projects that require significant design expertise and craftsmanship.</p>
+      </article>
+      <article>
+        <h2 tabindex="0">What is the minimum budget for a project?</h2>
+        <p tabindex="0">To ensure the highest level of quality and exclusivity, we only take on projects with a minimum investment of £100,000. This allows us to deliver landscapes that meet our exacting standards.</p>
+      </article>
+      <article>
+        <h2 tabindex="0">How long does the process take?</h2>
+        <p tabindex="0">Each project is unique, but most high-end landscape designs take between 6-12 months from initial consultation to completion.</p>
+      </article>
+      <article>
+        <h2 tabindex="0">Do you offer ongoing garden maintenance?</h2>
+        <p tabindex="0"> Yes, we provide an elite garden management service to ensure your estate remains in perfect condition.</p>
+      </article>
+      <article>
+        <h2 tabindex="0">Can you work with historic properties?</h2>
+        <p tabindex="0">Absolutely. We specialize in restoring and preserving heritage landscapes with great care and expertise.</p>
+      </article>
+    </section>
+    <section class="contact-container contact-bg-img" aria-label="Contact information">
+      <article class="contact-text">
+        <h2>Still have questions? Get in touch with our team.</h2>
+      </article>
+  <address>
+    <h3 tabindex="0">Contact Details:</h3>
+    <figure class="figure1">
+      <img class="contact-icon" src="images/phone-icon.svg" alt="">
+      <figcaption><a href="tel:+441522123456">01234 567 890</a></figcaption>
+    </figure>
+    <figure class="figure2">
+      <img class="contact-icon" src="images/email-icon.svg" alt="">
+      <figcaption><a href="mailto:example@aurumlandscapes.com">info@aurumlandscapes.co.uk</a></figcaption>
+    </figure>
+    <figure class="figure3">
+      <img class="contact-icon" src="images/location-icon.svg" alt="">
+      <figcaption>Cotswolds, UK (By appointment only)</figcaption>
+    </figure>
+  </address>
+
+  <form class="consultation-form" action="(Database here)" method="POST">
+    <h3>Get in Touch:</h3>
+    
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="i.e. 'John Smith'" required>
+   
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="i.e. 'name@example.com'" required>
+    
+      <label for="tel">Contact Number:</label>
+      <input type="tel" id="tel" name="tel" placeholder="i.e. '01522123456'">
+
+      <label for="enquiry">Enquiry Message:</label>
+      <textarea id="enquiry" name="enquiry" placeholder="Enquiry Message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+  </form>
+</section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Cotswold Landscaping. All rights reserved.</p>
+    <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/villa" title="villa icons">Villa icons created by 3ab2ou - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/trees" title="trees icons">Trees icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Prosymbols - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+  </footer>
+  <!------JavaScript which toggles menu (note: Claude AI was used to assist in the keyboard navigation implementation of the javascript.)------>
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+        var openBtn = document.querySelector('[aria-label="Open navigation menu"]');
+        var closeBtn = document.querySelector('[aria-label="Close navigation menu"]');
+        var navItems = navLinks.querySelectorAll('a, button');
+
+        function showMenu(){
+          navLinks.style.right = "0";
+          openBtn.setAttribute('aria-expanded', 'true');
+          navItems.forEach(item => item.setAttribute('tabindex', '0'));
+          closeBtn.focus();
+        }
+
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+          openBtn.setAttribute('aria-expanded', 'false');
+          navItems.forEach(item => item.setAttribute('tabindex', '-1'));
+          openBtn.focus();
+        }
+
+        function handleResize(){
+          if(window.innerWidth > 1100){
+            // Desktop
+            navLinks.style.right = "0";
+            navItems.forEach(item => item.setAttribute('tabindex', '0'));
+            openBtn.style.display = 'none';
+          } else {
+            // Mobile
+           navLinks.style.right = "-200px";
+            navItems.forEach(item => item.setAttribute('tabindex', '-1'));
+           openBtn.style.display = 'block';
+         }
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+      </script>
+</body>
+</html>

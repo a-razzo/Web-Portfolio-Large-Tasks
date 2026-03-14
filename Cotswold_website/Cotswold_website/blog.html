@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="blogstyles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav aria-label="Main navigation">
+  <a href="home.html"><img class="logo" src="images/cotswold_logo.svg" alt="Home Page"></a>
+  <div class="nav-links" id="navLinks">
+    <button class="menu-btn fa fa-times" onclick="hideMenu()" aria-label="Close navigation menu"></button>
+    <ul>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="service.html">OUR SERVICES</a></li>
+      <li><a href="process.html">OUR PROCESS</a></li>
+      <li><a href="projects.html">PAST PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+  <button class="fa fa-bars menu-btn" onclick="showMenu()" aria-label="Open navigation menu" aria-expanded="false"></button>
+</nav>
+  </header>
+  <main>
+    <h1 tabindex="0">Blogs</h1>
+    <p class="page-intro" tabindex="0">Stay inspired with the latest trends, insights, and behind-the-scenes glimpses into the world of luxury landscaping.</p>
+    <h2 tabindex="0">Recent Articles</h2>
+    <section class="article-container">
+      <article>
+        <figure>
+          <a href="#"><img src="images/magazine-1.jpg" alt="article"></a>
+          <figcaption>The Art of Timeless Garden Design – Discover how to create a landscape that stands the test of time.</figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <a href="#"><img src="images/magazine-2.jpg" alt="article"></a>
+          <figcaption>The Rise of Outdoor Living Spaces – Explore the luxury trend of fully integrated outdoor entertaining areas.</figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <a href="#"><img src="images/magazine-3.jpg" alt="article"></a>
+          <figcaption>Seasonal Garden Guide – Expert advice on keeping your estate in perfect condition year-round.</figcaption>
+        </figure>
+      </article>
+    </section>
+    <p>From expert planting advice to exclusive project showcases, our journal is a must-read for those who appreciate the beauty of fine landscaping. <a href="#">Explore more.</a></p>
+  </main>
+  <footer>
+    <p>&copy; 2026 Cotswold Landscaping. All rights reserved.</p>
+    <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/villa" title="villa icons">Villa icons created by 3ab2ou - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/trees" title="trees icons">Trees icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Prosymbols - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+  </footer>
+  <!------JavaScript which toggles menu (note: Claude AI was used to assist in the keyboard navigation implementation of the javascript.)------>
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+        var openBtn = document.querySelector('[aria-label="Open navigation menu"]');
+        var closeBtn = document.querySelector('[aria-label="Close navigation menu"]');
+        var navItems = navLinks.querySelectorAll('a, button');
+
+        function showMenu(){
+          navLinks.style.right = "0";
+          openBtn.setAttribute('aria-expanded', 'true');
+          navItems.forEach(item => item.setAttribute('tabindex', '0'));
+          closeBtn.focus();
+        }
+
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+          openBtn.setAttribute('aria-expanded', 'false');
+          navItems.forEach(item => item.setAttribute('tabindex', '-1'));
+          openBtn.focus();
+        }
+
+        function handleResize(){
+          if(window.innerWidth > 1100){
+            // Desktop
+            navLinks.style.right = "0";
+            navItems.forEach(item => item.setAttribute('tabindex', '0'));
+            openBtn.style.display = 'none';
+          } else {
+            // Mobile
+           navLinks.style.right = "-200px";
+            navItems.forEach(item => item.setAttribute('tabindex', '-1'));
+           openBtn.style.display = 'block';
+         }
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+      </script>
+</body>
+</html>

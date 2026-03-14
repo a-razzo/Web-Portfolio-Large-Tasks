@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Cotswold_website",
+			"path": "."
+		},
+		{
+			"name": "Adtrak - large Project 1 - Cotswold Landscaping company -  Aurum Landscapes",
+			"path": "../../../../../Downloads/Adtrak - large Project 1 - Cotswold Landscaping company -  Aurum Landscapes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Cotswold_website"
+	}
+}

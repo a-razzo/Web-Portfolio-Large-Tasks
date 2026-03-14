@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav aria-label="Main navigation">
+  <a href="home.html"><img class="logo" src="images/cotswold_logo.svg" alt="Home Page"></a>
+  <div class="nav-links" id="navLinks">
+    <button class="menu-btn fa fa-times" onclick="hideMenu()" aria-label="Close navigation menu"></button>
+    <ul>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="service.html">OUR SERVICES</a></li>
+      <li><a href="process.html">OUR PROCESS</a></li>
+      <li><a href="projects.html">PAST PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+  <button class="fa fa-bars menu-btn" onclick="showMenu()" aria-label="Open navigation menu" aria-expanded="false"></button>
+</nav>
+  </header>
+  <main>
+    <section class="carousel-container" tabindex="0">
+        <p>Welcome to <span class="highlight">Aurum Landscapes</span>, the premier luxury landscaping firm in the Cotswolds, specializing in bespoke garden design and estate transformations. We create breathtaking outdoor spaces that blend elegance, innovation, and craftsmanship to complement the finest country homes.</p>
+      <div class="container">
+      <div class="wrapper">
+      <img class="carousel-img" src="images/1.jpg" alt="carousel image 1">
+      <img class="carousel-img" src="images/2.jpg" alt="carousel image 2">
+      <img class="carousel-img" src="images/3.jpg" alt="carousel image 3">
+      <img class="carousel-img" src="images/4.jpg" alt="carousel image 4">
+      </div>
+      </div>
+    </section>
+    <section>
+      <div class="offer-container">
+        <h2>To us, it's not just about landscaping, it's about <span style="font-style: italic;">maintaining your heritage.</span></h2>
+        <article class="offer">
+          <figure class="offer-img" tabindex="0">
+            <img src="images/37.JPG" alt="Image of a large country garden and a stone terrace">
+          </figure>
+          <figure class="offer-text" tabindex="0">
+            <h2>Your Dream Landscape, Realised</h2>
+            <p>With a meticulous approach and a passion for perfection, our team of expert landscape designers, horticulturists, and artisans work exclusively on projects starting from £100,000. Our mission is to craft timeless landscapes that enhance the beauty of your home while reflecting your vision and lifestyle.</p>
+          </figure>
+        </article>
+        <article class="offer offer-inverted">
+          <figure class="offer-img" tabindex="0">
+            <img src="images/garden4.JPG" alt="Image of a secluded country house with a stone terrace">
+          </figure>
+          <figure class="offer-text" tabindex="0">
+            <h2>Tailored to Your Estate</h2>
+            <p>From sweeping manicured gardens to architecturally inspired outdoor living spaces, we curate landscapes that stand as works of art. Whether restoring a historic garden or designing an entirely new outdoor sanctuary, we tailor every detail to suit your estate&#x2019;s character.</p>
+          </figure>
+        </article>
+      </div>
+      <h2>Our most popular requests:</h2>
+      <div class="extras-container">
+        <ul>
+          <li tabindex="0">Bespoke Garden Design</li>
+          <li tabindex="0">Estate & Country Home Landscaping</li>
+          <li tabindex="0">Garden Restoration & Conservation</li>
+          <li tabindex="0">Outdoor Living & Luxury Features</li>
+          <li tabindex="0">Ongoing Garden Management</li>
+          <li tabindex="0">Mature Tree Importation, Planting & Care</li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2>Recent reviews</h2>
+      <div class="row">
+        <div class="testimonial-col" tabindex="0">
+            <p>
+              From the very first consultation, the team made me feel like my garden was their top priority. The attention to detail is stunning — every time I look out of my window I'm reminded of how lucky I was to find them
+              <h3>Clint E.</h3>
+            </p>
+        </div>
+        <div class="testimonial-col" tabindex="0">
+            <p>
+              Professional, thoughtful, and genuinely invested in the work they do. They kept us informed at every stage and the finished result is beyond anything we expected. Our garden has completely transformed the way we live.
+              <h3>George & Amal C.</h3>
+            </p>   
+        </div>
+      </div>
+    </section>
+    <section class="contact-container contact-bg-img" aria-label="Contact information" tabindex="0">
+      <article class="contact-text">
+        <p>At Aurum Landscapes, luxury means exclusivity, attention to detail, and an unwavering commitment to excellence. We take on a select number of projects each year to ensure every client receives our undivided attention.</p>
+        <h2>Begin your journey to a truly remarkable garden. Contact us today to discuss your vision.</h2>
+      </article>
+  <address>
+    <h3>Contact Details:</h3>
+    <figure class="figure1">
+      <img class="contact-icon" src="images/phone-icon.svg" alt="telephone icon">
+      <figcaption tabindex="0"><a href="tel:+441522123456">01234 567 890</a></figcaption>
+    </figure>
+    <figure class="figure2">
+      <img class="contact-icon" src="images/email-icon.svg" alt="email icon">
+      <figcaption tabindex="0"><a href="mailto:example@aurumlandscapes.com">info@aurumlandscapes.co.uk</a></figcaption>
+    </figure>
+    <figure class="figure3">
+      <img class="contact-icon" src="images/location-icon.svg" alt="location icon">
+      <figcaption tabindex="0">Cotswolds, UK (By appointment only)</figcaption>
+    </figure>
+  </address>
+
+  <form class="consultation-form" action="(Database here)" method="POST">
+    <h3>Get in Touch:</h3>
+    
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="i.e. 'John Smith'" required>
+   
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="i.e. 'name@example.com'" required>
+    
+      <label for="tel">Contact Number:</label>
+      <input type="tel" id="tel" name="tel" placeholder="i.e. '01522123456'">
+
+      <label for="enquiry">Enquiry Message:</label>
+      <textarea id="enquiry" name="enquiry" placeholder="Enquiry Message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+  </form>
+</section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Cotswold Landscaping. All rights reserved.</p>
+    <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/villa" title="villa icons">Villa icons created by 3ab2ou - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/trees" title="trees icons">Trees icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Prosymbols - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+  </footer>
+  <!------JavaScript which toggles menu (note: Claude AI was used to assist in the keyboard navigation implementation of the javascript.)------>
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+        var openBtn = document.querySelector('[aria-label="Open navigation menu"]');
+        var closeBtn = document.querySelector('[aria-label="Close navigation menu"]');
+        var navItems = navLinks.querySelectorAll('a, button');
+
+        function showMenu(){
+          navLinks.style.right = "0";
+          openBtn.setAttribute('aria-expanded', 'true');
+          navItems.forEach(item => item.setAttribute('tabindex', '0'));
+          closeBtn.focus();
+        }
+
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+          openBtn.setAttribute('aria-expanded', 'false');
+          navItems.forEach(item => item.setAttribute('tabindex', '-1'));
+          openBtn.focus();
+        }
+
+        function handleResize(){
+          if(window.innerWidth > 1100){
+            // Desktop
+            navLinks.style.right = "0";
+            navItems.forEach(item => item.setAttribute('tabindex', '0'));
+            openBtn.style.display = 'none';
+          } else {
+            // Mobile
+           navLinks.style.right = "-200px";
+            navItems.forEach(item => item.setAttribute('tabindex', '-1'));
+           openBtn.style.display = 'block';
+         }
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+      </script>
+</body>
+</html>
