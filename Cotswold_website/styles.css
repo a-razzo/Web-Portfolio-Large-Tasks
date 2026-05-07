@@ -151,7 +151,7 @@ nav img {
   color: #ffc831;
 }
 
-nav .fa{
+nav .menu-btn{
   display: none;
 }
 
@@ -264,6 +264,7 @@ nav .fa{
   bottom: 0em;
   left: 1em;
   display: flex;
+  align-items: center;
   gap: 1em;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.8);
@@ -271,7 +272,8 @@ nav .fa{
 }
 
 .certificate-badges img {
-  width: 150px;
+  width: auto;
+  max-width: 150px;
   height: auto;
   border: none;
 }
@@ -395,12 +397,12 @@ nav .fa{
   opacity: 1;
 }
 
-.extras-item-1 { background-image: url('images/13.jpg'); }
-.extras-item-2 { background-image: url('images/7.jpg'); }
-.extras-item-3 { background-image: url('images/lawn.JPG'); }
-.extras-item-4 { background-image: url('images/9.jpg'); }
-.extras-item-5 { background-image: url('images/2.jpg'); }
-.extras-item-6 { background-image: url('images/1.jpg'); }
+.extras-item-1 { background-image: url('images/13.webp'); }
+.extras-item-2 { background-image: url('images/7.webp'); }
+.extras-item-3 { background-image: url('images/lawn.webp'); }
+.extras-item-4 { background-image: url('images/9.webp'); }
+.extras-item-5 { background-image: url('images/2.webp'); }
+.extras-item-6 { background-image: url('images/1.webp'); }
 
 .extras-item span {
   position: relative;
@@ -467,7 +469,7 @@ nav .fa{
 }
 
 .contact-bg-img{
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('images/10.jpeg');
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('images/10.webp');
   width: 100%;
   background-size: cover;
   object-fit: cover;
@@ -633,7 +635,7 @@ footer{
     padding: 30px;
   }
 
-  nav .fa{
+  nav .menu-btn{
     display: block;
     color: #fff;
     margin: 10px;
@@ -650,7 +652,8 @@ footer{
   }
 
   .certificate-badges img {
-  width: 75px;
+  width: auto;
+  max-width: 75px;
   }
 }
 

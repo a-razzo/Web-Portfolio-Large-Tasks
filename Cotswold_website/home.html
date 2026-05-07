@@ -4,23 +4,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <title>Aurum Landscapes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Aurum Landscapes - Home</title>
+  <link rel="preload" as="image" href="images/07.webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="projectsstyles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
   <header class="header">
     <nav aria-label="Main navigation">
   <div class="logo-wrapper">
-    <a href="home.html"><img class="logo" src="images/aurum-landscapes-logo.svg" alt="Home Page"></a>
+    <a href="home.html"><img class="logo" src="images/aurum-landscapes-logo.webp" alt="Home Page"></a>
   </div>
   <div class="nav-links" id="navLinks">
-    <button class="menu-btn fa fa-times" onclick="hideMenu()" aria-label="Close navigation menu"></button>
+    <button class="menu-btn" onclick="hideMenu()" aria-label="Close navigation menu">✕</button>
     <ul>
       <li><a href="about.html">ABOUT US</a></li>
       <li><a href="process.html">OUR PROCESS</a></li>
@@ -30,7 +27,7 @@
       <li><a href="contact.html">CONTACT US</a></li>
     </ul>
   </div>
-  <button class="fa fa-bars menu-btn" onclick="showMenu()" aria-label="Open navigation menu" aria-expanded="false"></button>
+  <button class="menu-btn" onclick="showMenu()" aria-label="Open navigation menu" aria-expanded="false">☰</button>
 </nav>
   </header>
   <main>
@@ -38,30 +35,30 @@
       <p class="process-carousel-text">Outdoor<br><span style="font-style: italic;">Excellence.</span><a class="cta-call" href="tel:+441234567890">Call us on 01234 567 890</a></p>
       <div class="container">
       <div class="wrapper">
-      <img class="carousel-img" src="images/07.jpg" alt="#">
-      <img class="carousel-img" src="images/pool1.jpg" alt="#">
-      <img class="carousel-img" src="images/3.jpg" alt="#">
-      <img class="carousel-img" src="images/18.jpg" alt="#">
+      <img class="carousel-img" src="images/07.webp" alt="#" fetchpriority="high" loading="eager" decoding="async">
+      <img class="carousel-img" src="images/pool1.webp" alt="#" loading="lazy" decoding="async">
+      <img class="carousel-img" src="images/3.webp" alt="#" loading="lazy" decoding="async">
+      <img class="carousel-img" src="images/18.webp" alt="#" loading="lazy" decoding="async">
       </div>
       </div>
       <div class="certificate-badges">
-    <img src="images/landscape_award1.svg" alt="Award certificate 1">
-    <img src="images/landscape_award2.svg" alt="Award certificate 2">
+    <img src="images/landscape_award1.webp" alt="Award certificate 1" loading="lazy" decoding="async">
+    <img src="images/landscape_award2.webp" alt="Award certificate 2" loading="lazy" decoding="async">
   </div>
     </section>
       <p class="slogan">At <span class="gold">Aurum Landscapes</span>, we specialise in bespoke garden design and estate transformations.</p>
       <section class="project-container">
       <figure class="project-img">
-        <img src="images/historic-reno1.jpg" alt="image of a mansion" loading="lazy">
+        <img src="images/historic-reno1.webp" alt="image of a mansion" loading="lazy" decoding="async" >
       </figure>
       <figure class="project-img">
-        <img src="images/8.jpg" alt="image of a garden and basket" loading="lazy">
+        <img src="images/8.webp" alt="image of a garden and basket" loading="lazy" decoding="async" >
       </figure>
       <figure class="project-img">
-        <img src="images/historic-reno3.jpg" alt="image of a house and front garden" loading="lazy">
+        <img src="images/historic-reno3.webp" alt="image of a house and front garden" loading="lazy" decoding="async" >
       </figure>
       <figure class="project-img">
-        <img src="images/historic-reno4.jpg" alt="image of a pathway leading to a house" loading="lazy">
+        <img src="images/historic-reno4.webp" alt="image of a pathway leading to a house" loading="lazy" decoding="async" >
       </figure>
     </section>
     <section>
@@ -69,7 +66,7 @@
         <p class="slogan">To us, it's not just about landscaping, it's about <span style="font-style: italic;">maintaining your heritage.</span></h2>
         <article class="offer">
           <figure class="offer-img">
-            <img src="images/37.JPG" alt="Image of a large country garden and a stone terrace">
+            <img src="images/37.webp" alt="Image of a large country garden and a stone terrace" loading="lazy" decoding="async">
           </figure>
           <figure class="offer-text" tabindex="0">
             <h2>Your Dream Landscape, Realised</h2>
@@ -78,7 +75,7 @@
         </article>
         <article class="offer offer-inverted">
           <figure class="offer-img">
-            <img src="images/garden4.JPG" alt="Image of a secluded country house with a stone terrace">
+            <img src="images/garden4.webp" alt="Image of a secluded country house with a stone terrace" loading="lazy" decoding="async">
           </figure>
           <figure class="offer-text" tabindex="0">
             <h2>Tailored to Your Estate</h2>
@@ -141,15 +138,15 @@
   <address>
     <h3>Contact Details:</h3>
     <figure class="figure1">
-      <img class="contact-icon" src="images/phone-icon.svg" alt="telephone icon">
+      <img class="contact-icon" src="images/phone-icon.webp" alt="telephone icon" loading="lazy" decoding="async">
       <figcaption tabindex="0"><a href="tel:+441522123456">01234 567 890</a></figcaption>
     </figure>
     <figure class="figure2">
-      <img class="contact-icon" src="images/email-icon.svg" alt="email icon">
+      <img class="contact-icon" src="images/email-icon.webp" alt="email icon" loading="lazy" decoding="async">
       <figcaption tabindex="0"><a href="mailto:example@aurumlandscapes.com">info@aurumlandscapes.co.uk</a></figcaption>
     </figure>
     <figure class="figure3">
-      <img class="contact-icon" src="images/location-icon.svg" alt="location icon">
+      <img class="contact-icon" src="images/location-icon.webp" alt="location icon" loading="lazy" decoding="async">
       <figcaption tabindex="0">Cotswolds, UK (By appointment only)</figcaption>
     </figure>
   </address>
